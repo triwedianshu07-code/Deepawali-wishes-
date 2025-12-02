@@ -95,7 +95,7 @@
         }
 
         /* Styling for the Image */
-        #laxmi-image {
+        #2026-image {
             max-width: 150px;
             height: auto;
             border: 5px solid #ffd700; /* Gold border */
