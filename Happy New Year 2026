@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪔 Happy New Year 2026 from your friend 🌟</title>
+    <style>
+        /* --- Charmik (Charming) Happy New Year 2026 Theme Styling --- */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            /* Golden gradient background */
+            background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%); 
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Firecracker Effect Background (3X Increased) */
+        .cracker {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: gold;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: firecracker 1.5s ease-out infinite;
+            box-shadow: 0 0 5px gold, 0 0 10px orange;
+            z-index: 0;
+        }
+
+        /* Placing 15 crackers (More spread out) */
+        .cracker:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+        .cracker:nth-child(2) { top: 80%; left: 90%; animation-delay: 0.5s; }
+        .cracker:nth-child(3) { top: 50%; left: 5%; animation-delay: 1s; }
+        .cracker:nth-child(4) { top: 30%; right: 15%; animation-delay: 1.5s; }
+        .cracker:nth-child(5) { top: 65%; left: 45%; animation-delay: 2s; }
+        
+        /* New Crackers (Increased Density) */
+        .cracker:nth-child(6) { top: 20%; left: 50%; animation-delay: 0.2s; }
+        .cracker:nth-child(7) { top: 75%; left: 25%; animation-delay: 0.7s; }
+        .cracker:nth-child(8) { top: 40%; right: 40%; animation-delay: 1.2s; }
+        .cracker:nth-child(9) { top: 60%; left: 80%; animation-delay: 1.7s; }
+        .cracker:nth-child(10) { top: 5%; right: 5%; animation-delay: 2.2s; }
+        
+        /* More Crackers */
+        .cracker:nth-child(11) { top: 90%; left: 55%; animation-delay: 0.3s; }
+        .cracker:nth-child(12) { top: 15%; right: 70%; animation-delay: 0.8s; }
+        .cracker:nth-child(13) { top: 45%; left: 30%; animation-delay: 1.3s; }
+        .cracker:nth-child(14) { top: 70%; right: 25%; animation-delay: 1.8s; }
+        .cracker:nth-child(15) { top: 35%; left: 5%; animation-delay: 2.3s; }
+
+        @keyframes firecracker {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.5); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+
+        /* --- Main Content Styling --- */
+        #message-container {
+            margin-bottom: 30px;
+            z-index: 10; 
+            padding: 10px;
+        }
+
+        #message {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            color: #ff4500; /* Deep Orange Red */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            opacity: 0; /* Starts hidden */
+            transform: translateY(-20px) scale(0.9);
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+            margin-bottom: 10px;
+        }
+
+        .animate {
+            opacity: 1 !important;
+            transform: translateY(0) scale(1) !important;
+        }
+
+        #sender-display {
+            font-size: 1.6em;
+            color: #4b0082; /* Indigo/Violet color */
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        /* Styling for the Image */
+        #laxmi-image {
+            max-width: 150px;
+            height: auto;
+            border: 5px solid #ffd700; /* Gold border */
+            border-radius: 50%; /* Circular frame */
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+            z-index: 10;
+        }
+
+        /* Styling for the Input/Share section (The Box) */
+        #input-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            border: 3px dashed #ff8c00; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        
+        #prompt-text {
+            font-size: 1.1em;
+            color: #8b4513; 
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        #name-input {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ff8c00;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        /* Share Button Group Styling */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .share-button {
+            flex-grow: 1;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: white;
+            transition: background-color 0.3s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #whatsapp-share {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+        #whatsapp-share:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+        }
+        
+        .whatsapp-icon {
+            margin-right: 8px;
+            font-size: 1.4em; /* Make the logo prominent */
+        }
+
+        #copy-link {
+            background-color: #008000; /* Copy Link Green */
+        }
+        #copy-link:hover {
+            background-color: #006400;
+            transform: translateY(-2px);
+        }
+
+        #share-link-display {
+            word-break: break-all;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fffacd;
+            border: 1px solid #ffd700;
+            border-radius: 8px;
+            display: none; 
+            text-align: left;
+            font-size: 0.9em;
+        }
+        #share-link-display a {
+            color: #ff4500;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+    <div class="cracker"></div>
+
+    <div id="message-container">
+        <div id="message">Happy New Year 2026!</div>
+        <div id="sender-display"></div>
+    </div>
+    
+    <img id="2026-image" src="2026.gif" alt="Happy New Year 2026 Animation">
+      <div id="input-container">
+        <p id="prompt-text">✨ अपना शुभ नाम नीचे लिखें और यह खास लिंक तुरंत शेयर करें:</p>
+        <input type="text" id="name-input" placeholder="जैसे: अंशु त्रिवेदी , प्रिया...">
+        
+        <div class="button-group">
+            <button id="whatsapp-share" class="share-button" onclick="generateAndShare()">
+                <span class="whatsapp-icon">📱</span> WhatsApp पर भेजें
+            </button>
+            <button id="copy-link" class="share-button" onclick="copyLink()">🔗 लिंक कॉपी करें</button>
+        </div>
+        
+        <div id="share-link-display"></div>
+    </div>
+
+    <script>
+        // --- Core JavaScript Logic ---
+        let shareableURL = "";
+        const messageElement = document.getElementById('message');
+        const senderDisplayElement = document.getElementById('sender-display');
+        const nameInput = document.getElementById('name-input');
+        const shareLinkDisplay = document.getElementById('share-link-display');
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const params = new URLSearchParams(window.location.search);
+            const senderName = params.get('from');
+            
+            // Check if 'from' parameter exists in the URL
+            if (senderName) {
+                // Shared Link Case: Display the animated message and sender's name
+                const decodedName = decodeURIComponent(senderName);
+                
+                // Set the sender's name
+                senderDisplayElement.innerHTML = `from **${decodedName}** 💖`;
+                
+                // Animate the "Happy New Year 2026!" message
+                setTimeout(() => {
+                    messageElement.classList.add('animate');
+                }, 100); 
+
+                // Update the prompt text for the recipient
+                document.getElementById('prompt-text').innerHTML = 'आप भी अपना नाम लिखकर यह सुंदर शुभकामनाएँ दूसरों को भेज सकते हैं:';
+
+            } else {
+                // First Visit Case: Display a static welcome message
+                messageElement.style.opacity = '1';
+                messageElement.style.fontSize = '3em';
+                messageElement.textContent = 'श्री लक्ष्मी जी का आशीर्वाद 🪔';
+                senderDisplayElement.innerHTML = 'सभी को खुशी और समृद्धि की शुभकामनाएँ।';
+            }
+        });
+
+        // Function to generate the shareable link and store it
+        function generateLink() {
+            const name = nameInput.value.trim();
+
+            if (name === "") {
+                alert("कृपया अपना नाम लिखें!");
+                return null;
+            }
+
+            // Get the base URL of the current page. This works well for GitHub Pages.
+            const baseUrl = window.location.origin + window.location.pathname;
+            
+            // Create the shareable link by appending the name as a URL parameter
+            const encodedName = encodeURIComponent(name);
+            shareableURL = `${baseUrl}?from=${encodedName}`;
+            
+            return shareableURL;
+        }
+
+        // 1. Function to handle WhatsApp and Native Sharing
+        function generateAndShare() {
+            const url = generateLink();
+            if (!url) return;
+
+            const name = nameInput.value.trim();
+            const shareText = `🌟 Happy New Year 2026! 🪔\n\nआपके लिए ${name} की ओर से एक खास नये साल  2026   की शुभकामनाएँ! इस सुंदर लिंक पर क्लिक करें और आशीर्वाद प्राप्त करें: 👇\n\n`;
+
+            if (navigator.share) {
+                // Use Web Share API (Mobile phones / Modern browsers) - Shows all apps
+                navigator.share({
+                    title: 'Happy New Year 2026 wishes ',
+                    text: shareText,
+                    url: url,
+                }).then(() => {
+                    console.log('Successfully shared');
+                    document.getElementById('whatsapp-share').innerHTML = '<span class="whatsapp-icon">✅</span> शेयर हो गया!';
+                    setTimeout(() => {
+                        document.getElementById('whatsapp-share').innerHTML = '<span class="whatsapp-icon">📱</span> WhatsApp पर भेजें';
+                    }, 3000);
+                }).catch((error) => {
+                    console.error('Error sharing:', error);
+                    // Fallback to WhatsApp direct link if Web Share fails
+                    window.location.href = `whatsapp://send?text=${encodeURIComponent(shareText + url)}`;
+                });
+            } else {
+                // Fallback for Desktop/Older browsers: Use WhatsApp Web link
+                window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + url)}`, '_blank');
+            }
+        }
+
+        // 2. Function to copy the link to the clipboard
+        function copyLink() {
+            const url = generateLink();
+            if (!url) return;
+
+            // Display the link for desktop users
+            shareLinkDisplay.innerHTML = `**शेयर करने का लिंक:**<br><a href="${url}" target="_blank">${url}</a>`;
+            shareLinkDisplay.style.display = 'block';
+
+            // Copy to clipboard
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(() => {
+                    document.getElementById('copy-link').innerHTML = '✅ लिंक कॉपी हो गया!';
+                    setTimeout(() => {
+                        document.getElementById('copy-link').innerHTML = '🔗 लिंक कॉपी करें';
+                    }, 3000);
+                }).catch(err => {
+                    console.error('Could not copy text: ', err);
+                    alert("लिंक कॉपी नहीं हो सका, कृपया नीचे दिए गए बॉक्स से मैन्युअल रूप से कॉपी करें।");
+                });
+            } else {
+                 alert("लिंक कॉपी नहीं हो सका। कृपया नीचे दिए गए बॉक्स से कॉपी करें।");
+            }
+        }
+    </script>
+</body>
+</html>
