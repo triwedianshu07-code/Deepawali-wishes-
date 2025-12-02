@@ -264,7 +264,7 @@
                 // First Visit Case: Display a static welcome message
                 messageElement.style.opacity = '1';
                 messageElement.style.fontSize = '3em';
-                messageElement.textContent = 'श्री लक्ष्मी जी का आशीर्वाद 🪔';
+                messageElement.textContent = 'Happy New Year 2026 🪔';
                 senderDisplayElement.innerHTML = 'सभी को खुशी और समृद्धि की शुभकामनाएँ।';
             }
         });
