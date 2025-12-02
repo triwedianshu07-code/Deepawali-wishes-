@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🪔 Happy Diwali Wishes from your friend 🌟</title>
+    <title>🪔 Happy New Year 2026 from your friend 🌟</title>
     <style>
-        /* --- Charmik (Charming) Diwali Theme Styling --- */
+        /* --- Charmik (Charming) Happy New Year 2026 Theme Styling --- */
         
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap');
 
@@ -213,15 +213,14 @@
     <div class="cracker"></div>
 
     <div id="message-container">
-        <div id="message">Happy Diwali!</div>
+        <div id="message">Happy New Year 2026!</div>
         <div id="sender-display"></div>
     </div>
     
-    <img id="laxmi-image" src="laxmi.gif" alt="Laxmi Ji Animation">
-
-    <div id="input-container">
+    <img id="2026-image" src="2026.gif" alt="Happy New Year 2026 Animation">
+      <div id="input-container">
         <p id="prompt-text">✨ अपना शुभ नाम नीचे लिखें और यह खास लिंक तुरंत शेयर करें:</p>
-        <input type="text" id="name-input" placeholder="जैसे: राहुल, प्रिया...">
+        <input type="text" id="name-input" placeholder="जैसे: अंशु त्रिवेदी , प्रिया...">
         
         <div class="button-group">
             <button id="whatsapp-share" class="share-button" onclick="generateAndShare()">
@@ -253,7 +252,7 @@
                 // Set the sender's name
                 senderDisplayElement.innerHTML = `from **${decodedName}** 💖`;
                 
-                // Animate the "Happy Diwali!" message
+                // Animate the "Happy New Year 2026!" message
                 setTimeout(() => {
                     messageElement.classList.add('animate');
                 }, 100); 
@@ -295,12 +294,12 @@
             if (!url) return;
 
             const name = nameInput.value.trim();
-            const shareText = `🌟 Happy Diwali! 🪔\n\nआपके लिए ${name} की ओर से एक खास दिवाली की शुभकामनाएँ! इस सुंदर लिंक पर क्लिक करें और आशीर्वाद प्राप्त करें: 👇\n\n`;
+            const shareText = `🌟 Happy New Year 2026! 🪔\n\nआपके लिए ${name} की ओर से एक खास नये साल  2026   की शुभकामनाएँ! इस सुंदर लिंक पर क्लिक करें और आशीर्वाद प्राप्त करें: 👇\n\n`;
 
             if (navigator.share) {
                 // Use Web Share API (Mobile phones / Modern browsers) - Shows all apps
                 navigator.share({
-                    title: 'Happy Diwali Wishes',
+                    title: 'Happy New Year 2026 wishes ',
                     text: shareText,
                     url: url,
                 }).then(() => {
